@@ -8,6 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Material 3 Light Theme */
     --background: 210 17% 98%;
     --foreground: 0 0% 12%;
 
@@ -17,7 +18,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 12%;
 
-    --primary: 221 89% 63%;
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 17% 95%;
@@ -34,18 +35,24 @@ All colors MUST be HSL.
 
     --border: 210 17% 90%;
     --input: 210 17% 95%;
-    --ring: 221 89% 63%;
+    --ring: 221 83% 53%;
 
     --radius: 0.75rem;
 
     --accent-green: 134 52% 42%;
     --accent-orange: 44 97% 50%;
     --surface-container: 210 17% 95%;
+    --surface: 0 0% 100%;
+    --on-surface: 0 0% 12%;
+    --on-surface-secondary: 210 5% 39%;
+    --outline: 210 17% 90%;
+    --outline-variant: 210 17% 93%;
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
+    /* Material 3 Dark Theme */
     --background: 208 38% 9%;
     --foreground: 210 17% 98%;
 
@@ -55,7 +62,7 @@ All colors MUST be HSL.
     --popover: 210 10% 12%;
     --popover-foreground: 210 17% 98%;
 
-    --primary: 221 89% 63%;
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 10% 16%;
@@ -72,11 +79,16 @@ All colors MUST be HSL.
 
     --border: 210 10% 20%;
     --input: 210 10% 16%;
-    --ring: 221 89% 63%;
+    --ring: 221 83% 53%;
     
     --accent-green: 134 52% 42%;
     --accent-orange: 44 97% 50%;
     --surface-container: 210 10% 16%;
+    --surface: 210 10% 12%;
+    --on-surface: 210 17% 98%;
+    --on-surface-secondary: 210 5% 60%;
+    --outline: 210 10% 20%;
+    --outline-variant: 210 10% 18%;
   }
 }
 
@@ -87,5 +99,23 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Material Symbols Icons */
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
   }
 }

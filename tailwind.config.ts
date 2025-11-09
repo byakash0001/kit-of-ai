@@ -50,6 +50,11 @@ export default {
         "accent-green": "hsl(var(--accent-green))",
         "accent-orange": "hsl(var(--accent-orange))",
         "surface-container": "hsl(var(--surface-container))",
+        "surface": "hsl(var(--surface))",
+        "on-surface": "hsl(var(--on-surface))",
+        "on-surface-secondary": "hsl(var(--on-surface-secondary))",
+        "outline": "hsl(var(--outline))",
+        "outline-variant": "hsl(var(--outline-variant))",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
@@ -58,6 +63,8 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        xl: "1rem",
+        "2xl": "1.25rem",
       },
       keyframes: {
         "accordion-down": {
